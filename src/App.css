@@ -1,9 +1,60 @@
-/* Add styling for your page here */
-
+/* App container */
 .App {
-
-}
-
-.BakeryItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   
-}
+  /* Header */
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  /* Bakery items container */
+  .bakery-items-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  /* Bakery item */
+  .BakeryItem {
+    width: calc(50% - 20px); /* Two items per row with spacing */
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background-color: #f9f9f9; /* Add background color */
+  }
+  
+  /* Bakery item image */
+  .BakeryItem img {
+    max-width: 100%; /* Limit image width */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  /* Cart container */
+  .cart-container {
+    width: 50%;
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background-color: #f9f9f9; /* Add background color */
+  }
+  
+  /* Cart title */
+  .cart-container h2 {
+    margin-bottom: 10px;
+  }
+  
+  /* Cart item list */
+  .cart-container ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  /* Cart item */
+  .cart-container li {
+    margin-bottom: 5px;
+  }
